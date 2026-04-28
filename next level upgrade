@@ -1,0 +1,9 @@
+Upgrading the prototype:-
+Level 2 -
+Add multiple sensors (left + right)
+Better obstacle navigation
+Level 3 -
+Implement full PID (Kp, Ki, Kd tuning)
+Level 4 -
+Add camera + Python (object detection)
+Hybrid AI + robotics system
