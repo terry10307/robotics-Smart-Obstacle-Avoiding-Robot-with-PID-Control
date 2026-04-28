@@ -1,0 +1,62 @@
+OUTLINE OF THE PROJECT:-
+ Embedded systems (Arduino)
+ Sensor interfacing
+ Control systems (PID)
+ Real robotics logic
+Project Idea
+
+Build a mobile robot that:-
+
+Moves autonomously
+Detects obstacles using sensors
+Adjusts its movement using PID control
+Avoids collisions smoothly (not jerky)
+
+Components Required:-
+Arduino Uno / Nano
+Ultrasonic Sensor (HC-SR04)
+Motor Driver (L298N)
+2 DC Motors + Wheels
+Chassis
+Battery pack
+Jumper wires
+
+System Architecture:-
+
+Sensors → Arduino → Control Logic → Motor Driver → Motors
+
+Ultrasonic → distance
+Arduino → decision making
+PID → smooth turning
+Motors → movement
+
+Core Logic
+Step 1: Read distance
+Ultrasonic sensor measures distance continuously
+Step 2: Decision making
+If obstacle < threshold → turn
+Else → move forward
+Step 3: Apply PID control
+Instead of sudden turns, use PID for smooth control
+
+
+PID Concept:- 
+
+u(t)=K
+p
+	​
+
+e(t)+K
+i
+	​
+
+∫e(t)dt+K
+d
+	​
+
+dt
+de(t)
+
+Where:
+e(t) = desired distance − actual distance
+Output controls motor speed difference
